@@ -1,0 +1,6 @@
+.data/
+*.backup.json
+*.orbe
+.DS_Store
+.sites-runtime/
+__pycache__/

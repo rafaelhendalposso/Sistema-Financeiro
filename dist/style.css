@@ -152,3 +152,6 @@ body[data-theme=dark] .topbar strong{color:var(--text)}
 .investment-actions button{min-width:0}
 .investment-actions button[data-action=add-investment-value]{font-size:.75rem;padding:6px 8px}
 .goal-sort{display:inline-flex;align-items:center;gap:4px;border:0;background:transparent;color:inherit;font:inherit;font-weight:inherit;letter-spacing:inherit;text-transform:inherit;padding:0;cursor:pointer}.goal-sort:hover{color:var(--text)}.goal-sort:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.goal-table-wrap{overflow-x:auto}
+.goal-table th:nth-child(1){width:8%}.goal-table th:nth-child(2){width:7%}.goal-table th:nth-child(3){width:24%}.goal-table th:nth-child(4){width:11%}.goal-table th:nth-child(5){width:10%}.goal-table th:nth-child(6){width:10%}.goal-table th:nth-child(7){width:11%}.goal-table th:nth-child(8){width:10%}.goal-table th:nth-child(9){width:9%}
+.goal-acquisition-cell strong,.goal-acquisition-cell small{display:block}.goal-acquisition-cell strong{font-size:.8rem}.goal-acquisition-cell small{margin-top:4px;color:var(--muted);font-size:.68rem}.goal-focus-choice{padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:color-mix(in srgb,var(--surface) 92%,var(--tint));}

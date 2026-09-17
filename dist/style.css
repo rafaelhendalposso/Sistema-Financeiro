@@ -206,3 +206,10 @@ body[data-theme=dark] .topbar strong{color:var(--text)}
 
 /* Hover dos gráficos de categoria no mesmo padrão dos detalhes mensais. */
 .analysis-bar-tooltip{width:350px;padding:16px;background:var(--nav);border:1px solid #ffffff32;border-radius:12px;box-shadow:0 18px 38px #07132388}.analysis-bar-tooltip h3{margin:0 0 13px;color:#f7fbff;font-size:1rem;font-weight:700}.analysis-tooltip-summary{gap:5px 12px;margin-bottom:11px;padding-bottom:11px}.analysis-tooltip-summary span{font-size:.72rem}.analysis-tooltip-summary b{font-size:.74rem}.analysis-tooltip-box{padding:12px 12px 9px;background:color-mix(in srgb,var(--surface) 94%,var(--nav));border:1px solid #ffffff1f;border-radius:10px}.analysis-tooltip-box-title{margin-bottom:6px;color:#b8c6d3;font-size:.73rem}.analysis-tooltip-entry{padding:5px 0;font-size:.72rem}.analysis-tooltip-entry b{font-size:.72rem}.analysis-tooltip-entry small{font-size:.64rem}.analysis-tooltip-more{margin:7px 0 0;color:#9fb1c5;font-size:.65rem}
+
+/* Hover de análises: o painel pode sair do card e a lista inteira fica navegável. */
+.analysis-card,.analysis-card .panelbody{overflow:visible}
+.analysis-bar-tooltip{pointer-events:auto;top:calc(100% - 4px);max-height:380px;overflow:auto;overscroll-behavior:contain}
+.analysis-tooltip-box{max-height:255px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.analysis-tooltip-entry{min-height:29px}
+@media(max-width:700px){.analysis-bar-tooltip{top:calc(100% - 3px);max-height:330px}.analysis-tooltip-box{max-height:215px}}

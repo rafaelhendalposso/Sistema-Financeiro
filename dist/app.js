@@ -1,4 +1,4 @@
-import {uid,today,currentMonth,money,cents,addMonth,addMonthsDate,renewGoalDeadlines,investmentValue,investmentAppliedAt,investmentYield,cardLimit,dateAt,blank,installments,invoice,accountBalance,outstanding,summary,firstInvoice,goalMonthly,salaryCalc,validate,migrate,palettes,investmentTotal} from './core.mjs?v=15';
+import {uid,today,currentMonth,money,cents,addMonth,addMonthsDate,renewGoalDeadlines,investmentValue,investmentAppliedAt,investmentYield,cardLimit,dateAt,blank,installments,invoice,accountBalance,outstanding,summary,firstInvoice,goalMonthly,salaryCalc,validate,migrate,palettes,investmentTotal} from './core.mjs?v=16';
 import * as vault from './vault.mjs';
 const app=document.querySelector('#app'),modal=document.querySelector('#modal');
 window.addEventListener('error',e=>{const target=document.querySelector('#app');if(target&&!target.innerHTML.trim())target.innerHTML=`<div class="auth-form"><div><h1>Falha ao carregar</h1><p>${esc(e.error?.message||e.message||'Erro inesperado')}</p></div></div>`});

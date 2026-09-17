@@ -233,6 +233,9 @@ body[data-theme=dark] .topbar strong{color:var(--text)}
 .analysis-month-tooltip .analysis-tooltip-box{max-height:300px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
 @media(max-width:700px){.analysis-month-tooltip{left:0;transform:translate(0,-4px);width:290px;max-width:calc(100vw - 32px)}.analysis-month-col:hover .analysis-month-tooltip,.analysis-month-col:focus-within .analysis-month-tooltip{transform:translate(0,0)}}
 .analysis-day{position:relative}
+.analysis-day.is-today{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent),0 8px 18px color-mix(in srgb,var(--accent) 16%,transparent)}
+.analysis-day.is-today>span{display:flex;align-items:center;justify-content:space-between;gap:6px;color:var(--accent);font-weight:700}
+.analysis-day-today{font-size:.58rem;font-style:normal;font-weight:700;letter-spacing:.2px}
 .analysis-day.has-spend:hover,.analysis-day.has-spend:focus-within{z-index:25}
 .analysis-day-tooltip{position:absolute;z-index:30;left:0;top:calc(100% + 7px);width:330px;max-width:min(330px,calc(100vw - 32px));padding:16px;background:var(--nav);color:#f7fbff;border:1px solid #ffffff32;border-radius:12px;box-shadow:0 18px 38px #07132388;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-4px);transition:opacity .14s ease,transform .14s ease}
 .analysis-day.edge-right .analysis-day-tooltip{left:auto;right:0}

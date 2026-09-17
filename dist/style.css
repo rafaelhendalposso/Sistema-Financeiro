@@ -235,6 +235,7 @@ body[data-theme=dark] .topbar strong{color:var(--text)}
 .analysis-day{position:relative}
 .analysis-day.has-spend:hover,.analysis-day.has-spend:focus-within{z-index:25}
 .analysis-day-tooltip{position:absolute;z-index:30;left:0;top:calc(100% + 7px);width:330px;max-width:min(330px,calc(100vw - 32px));padding:16px;background:var(--nav);color:#f7fbff;border:1px solid #ffffff32;border-radius:12px;box-shadow:0 18px 38px #07132388;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-4px);transition:opacity .14s ease,transform .14s ease}
+.analysis-day.edge-right .analysis-day-tooltip{left:auto;right:0}
 .analysis-day.has-spend:hover .analysis-day-tooltip,.analysis-day.has-spend:focus-within .analysis-day-tooltip{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0)}
 .analysis-day-tooltip h3{margin:0 0 13px;color:#f7fbff;font-size:1rem;font-weight:700}
 .analysis-day-tooltip .analysis-tooltip-box{max-height:230px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}

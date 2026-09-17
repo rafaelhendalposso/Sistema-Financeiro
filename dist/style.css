@@ -183,3 +183,14 @@ body[data-theme=dark] .topbar strong{color:var(--text)}
 .goal-item-actions button{min-width:44px}
 .goal-item-actions button[data-action=pay-goal]{min-width:118px}
 @media(max-width:540px){.goal-item-actions{gap:7px}.goal-item-actions button[data-action=pay-goal]{min-width:105px}}
+
+/* Prazo ajustável no próprio cartão e filtros em uma única faixa */
+.goal-acquisition-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.goal-acquisition-head small{margin:0!important;color:var(--muted)!important;font-size:.68rem!important;white-space:nowrap}
+.goal-month-stepper{display:flex;align-items:center;gap:7px;margin-top:8px}.goal-month-stepper>span{font-size:.82rem;color:var(--text);margin-right:auto}.goal-month-stepper strong{font-size:.84rem;min-width:50px;text-align:center;color:var(--accent)}.goal-month-btn{width:25px;height:25px;padding:0;border-radius:7px;background:transparent!important;border:1px solid var(--line);color:var(--muted);font-size:1rem;line-height:1}.goal-month-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--tint)!important}
+.goals-filters{grid-template-columns:minmax(210px,1.3fr) repeat(5,minmax(140px,1fr)) auto;align-items:center}.goals-filters button{margin-left:auto}
+@media(max-width:1180px){.goals-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.goals-filters input{grid-column:span 2}.goals-filters button{margin-left:0}}
+
+.transactions-filters{align-items:center}
+.transactions-filters select:first-child{flex:0 0 175px}
+.period-badge{display:inline-flex;align-items:center;padding:9px 12px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--muted);font-size:.8rem;font-weight:700;white-space:nowrap}
+@media(max-width:700px){.transactions-filters select:first-child{flex:1 1 160px}}

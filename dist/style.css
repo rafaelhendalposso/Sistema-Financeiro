@@ -210,6 +210,7 @@ body[data-theme=dark] .topbar strong{color:var(--text)}
 /* Hover de análises: o painel pode sair do card e a lista inteira fica navegável. */
 .analysis-card,.analysis-card .panelbody{overflow:visible}
 .analysis-bar-tooltip{pointer-events:auto;top:calc(100% - 4px);max-height:380px;overflow:auto;overscroll-behavior:contain}
+.analysis-bar-tooltip{max-height:none;overflow:visible}
 .analysis-tooltip-box{max-height:255px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
 .analysis-tooltip-entry{min-height:29px}
 .analysis-tooltip-box-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}.analysis-tooltip-sort{display:inline-flex;align-items:center;gap:5px;color:var(--muted);font-size:.62rem;white-space:nowrap}.analysis-tooltip-sort select{min-height:24px;padding:3px 7px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--text);font:inherit;cursor:pointer}.analysis-tooltip-sort select:focus{outline:2px solid color-mix(in srgb,var(--accent) 65%,transparent);outline-offset:1px}

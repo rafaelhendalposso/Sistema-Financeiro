@@ -233,3 +233,6 @@ body[data-theme=dark] .topbar strong{color:var(--text)}
 
 /* Escala lateral para dar valor às linhas de referência do gráfico. */
 .analysis-y-labels text{fill:var(--muted);font-size:10px;font-weight:600;font-variant-numeric:tabular-nums;dominant-baseline:middle}.analysis-history-chart .analysis-y-labels text{font-size:11px}
+
+/* A escala fica separada das linhas para não riscar os números. */
+.analysis-y-labels text{paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round;text-anchor:start}

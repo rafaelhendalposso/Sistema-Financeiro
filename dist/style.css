@@ -214,3 +214,12 @@ body[data-theme=dark] .topbar strong{color:var(--text)}
 .analysis-tooltip-entry{min-height:29px}
 .analysis-tooltip-box-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:7px}.analysis-tooltip-sort{display:inline-flex;align-items:center;gap:5px;color:var(--muted);font-size:.62rem;white-space:nowrap}.analysis-tooltip-sort select{min-height:24px;padding:3px 7px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--text);font:inherit;cursor:pointer}.analysis-tooltip-sort select:focus{outline:2px solid color-mix(in srgb,var(--accent) 65%,transparent);outline-offset:1px}
 @media(max-width:700px){.analysis-bar-tooltip{top:calc(100% - 3px);max-height:330px}.analysis-tooltip-box{max-height:215px}}
+
+/* Mantém o seletor do hover dentro do cartão de receitas. */
+.analysis-income-card .analysis-bar-tooltip{left:auto;right:18px}
+.analysis-tooltip-box-head{flex-wrap:wrap;align-items:center}
+.analysis-tooltip-sort{min-width:0;max-width:100%;flex:0 1 auto}
+.analysis-tooltip-sort span{flex:none}
+.analysis-tooltip-sort select{width:170px;max-width:100%;min-width:0;box-sizing:border-box}
+@media(max-width:760px){.analysis-income-card .analysis-bar-tooltip{left:0;right:auto}}
+@media(max-width:430px){.analysis-tooltip-box-head{align-items:flex-start}.analysis-tooltip-box-title{flex:1 1 100%}.analysis-tooltip-sort{width:100%;justify-content:space-between}.analysis-tooltip-sort select{flex:1 1 auto;width:auto}}
